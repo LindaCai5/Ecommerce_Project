@@ -46,7 +46,28 @@
 	background-size: cover;
 }
 
+.breadcrumb{
+	text-decoration-color: grey;
+	font-weight:500;
+	height: 240px;
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #ffe6e6;
+	text-decoration: none;
+}
 
-#parent_div_1{
-    display: flex;
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.breadcrumb li a:hover {
+  color:  #ff4da6;
+  text-decoration: none;
+}
+
+.breadcrumb li a {
+  color: #000000;
+  text-decoration: none;
 }
