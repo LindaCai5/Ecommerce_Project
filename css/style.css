@@ -1,3 +1,5 @@
+
+
 .megamenu-li {
 	position: static;
 }
@@ -8,4 +10,43 @@
 	left: 0;
 	right: 0;
 	padding: 15px;
+}
+
+.colOne{
+	font-size: 1rem;
+}
+
+.footL a{
+	color: gray;
+	text-decoration: none;
+}
+
+.footL li{
+	margin: 200;
+}
+
+.ohno{
+	font-size: 120px;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom:150px;
+	padding-left: 50px;
+	color: #3FBF3F;
+}
+
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.myPoster {
+	background-image: url(https://wallpaperplay.com/walls/full/5/8/d/87859.jpg);
+	background-size: cover;
+}
+
+
+#parent_div_1{
+    display: flex;
 }
