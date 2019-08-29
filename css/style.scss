@@ -1,6 +1,7 @@
 $color-beige: #ffe6e6;
 $color-light-grey: #aaa;
 $color-dark-grey: #888888;
+$color-grass-green: #3FBF3F;
 
 @mixin myLink{
   text-decoration: none;
@@ -60,7 +61,7 @@ $color-dark-grey: #888888;
 	padding-top: 120px;
 	padding-bottom: 150px;
 	padding-left: 50px;
-	color: #3FBF3F;
+	color: $color-grass-green;
 }
 
 .form-control {
@@ -70,10 +71,24 @@ $color-dark-grey: #888888;
 		font-style: italic;
 	}
 }
+
+//Banner
 .myPoster {
+  height: 400px;
 	background-image: url(https://wallpaperplay.com/walls/full/5/8/d/87859.jpg);
 	background-size: cover;
 }
+
+// Benefit Content
+.bfContent {
+  height: 300px;
+  i {
+    font-size: 2.5em;
+    color:$color-grass-green;
+  }
+}
+
+//BreadCrumb
 .breadcrumb {
 	display: block;
 	text-align: center;

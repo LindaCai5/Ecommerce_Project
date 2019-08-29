@@ -42,8 +42,15 @@
   font-style: italic; }
 
 .myPoster {
+  height: 400px;
   background-image: url(https://wallpaperplay.com/walls/full/5/8/d/87859.jpg);
   background-size: cover; }
+
+.bfContent {
+  height: 300px; }
+  .bfContent i {
+    font-size: 2.5em;
+    color: #3FBF3F; }
 
 .breadcrumb {
   display: block;
