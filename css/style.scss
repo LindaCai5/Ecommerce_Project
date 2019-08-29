@@ -1,0 +1,89 @@
+$color-beige: #ffe6e6;
+$color-light-grey: #aaa;
+$color-dark-grey: #888888;
+
+@mixin myLink{
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+@mixin myFtLink{
+  text-decoration: none;
+  color: $color-dark-grey;
+  text-align: center;
+}
+
+
+.megamenu-li {
+	position: static;
+}
+.megamenu {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 15px;
+}
+.colOne {
+	font-size: 1rem;
+}
+.footL {
+  a {
+    @include myFtLink;
+    &:hover {
+      color: $color-light-grey;
+    }
+  }
+}
+
+
+.sideImage{
+  width:100%;
+}
+
+.ohno {
+	font-size: 120px;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 150px;
+	padding-left: 50px;
+	color: #3FBF3F;
+}
+
+.form-control {
+	&::placeholder {
+		font-size: 0.95rem;
+		color: $color-light-grey;
+		font-style: italic;
+	}
+}
+.myPoster {
+	background-image: url(https://wallpaperplay.com/walls/full/5/8/d/87859.jpg);
+	background-size: cover;
+}
+.breadcrumb {
+	display: block;
+	text-align: center;
+	text-decoration-color: $color-light-grey;
+	margin: auto;
+	font-weight: 500;
+	height: 160px;
+	width: 100%;
+	background-color: $color-beige;
+	li {
+		a {
+			@include myLink;
+			&:hover {
+				color: $color-light-grey;
+			}
+		}
+		& + li {
+			&:before {
+				padding: 8px;
+				color: black;
+				content: "/\00a0";
+			}
+		}
+	}
+}
