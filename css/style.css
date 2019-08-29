@@ -1,21 +1,28 @@
 .megamenu-li {
   position: static; }
+  .megamenu-li .megamenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px; }
+    .megamenu-li .megamenu li {
+      position: static; }
 
-.megamenu {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  padding: 15px; }
-
-.colOne {
+.footColOne {
   font-size: 1rem; }
 
-.footL a {
+.footColOther ul li a {
   text-decoration: none;
   color: #888888;
   text-align: center; }
-  .footL a:hover {
+  .footColOther ul li a:hover {
+    color: #aaa; }
+.footColOther ul li a i {
+  text-decoration: none;
+  color: #888888;
+  text-align: center; }
+  .footColOther ul li a i:hover {
     color: #aaa; }
 
 .sideImage {

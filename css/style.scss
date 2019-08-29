@@ -17,26 +17,38 @@ $color-dark-grey: #888888;
 
 .megamenu-li {
 	position: static;
-}
-.megamenu {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	right: 0;
-	padding: 15px;
-}
-.colOne {
-	font-size: 1rem;
-}
-.footL {
-  a {
-    @include myFtLink;
-    &:hover {
-      color: $color-light-grey;
+  .megamenu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    li {
+      position: static;
     }
   }
 }
 
+.footColOne {
+	font-size: 1rem;
+}
+
+.footColOther {
+  ul li {
+    a {
+      @include myFtLink;
+      &:hover {
+        color: $color-light-grey;
+      }
+    }
+    a i {
+      @include myFtLink;
+      &:hover {
+        color: $color-light-grey;
+      }
+    }
+  }
+}
 
 .sideImage{
   width:100%;
