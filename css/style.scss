@@ -255,3 +255,38 @@ $product-hover-grey: rgba(179, 204, 179, 0.6);
     box-shadow: 10px 10px 12px 0px  $product-hover-grey;
   }
 }
+
+.carousel-caption {
+// need to fix the small screen size 
+  @media (min-width: 768px){
+    width: 500px;
+    top: 40px;
+  }
+  @media (min-width: 1280px){
+    width: 500px;
+    top: 40px;
+  }
+
+    bottom: auto;
+    p {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+}
+
+.carousel-item{
+  button a {
+    text-decoration: none;
+  }
+  &::after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+  }
+
+}

@@ -165,4 +165,30 @@
     -moz-box-shadow: 10px 10px 12px 0px rgba(179, 204, 179, 0.6);
     box-shadow: 10px 10px 12px 0px rgba(179, 204, 179, 0.6); }
 
+.carousel-caption {
+  bottom: auto; }
+  @media (min-width: 768px) {
+    .carousel-caption {
+      width: 500px;
+      top: 40px; } }
+  @media (min-width: 1280px) {
+    .carousel-caption {
+      width: 500px;
+      top: 40px; } }
+  .carousel-caption p {
+    padding-top: 50px;
+    padding-bottom: 20px; }
+
+.carousel-item button a {
+  text-decoration: none; }
+.carousel-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6); }
+
 /*# sourceMappingURL=style.css.map */
