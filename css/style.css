@@ -47,6 +47,7 @@
   background-size: cover; }
 
 .bfContent {
+  background-color: #43493F;
   height: auto; }
   .bfContent i {
     font-size: 2.5em;
@@ -72,9 +73,16 @@
     color: black;
     content: "/\00a0"; }
 
-.card {
+.pcard {
   width: 360px;
   height: 400px;
+  border: none; }
+
+#fcard {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 240px;
   border: none; }
 
 .staticCard::after {
@@ -87,20 +95,23 @@
   background-image: linear-gradient(120deg, #eaee44, #33d0ff);
   opacity: .6; }
 
-.box-shadow button {
-  border: 1px solid #DCDCDC;
-  background-color: white;
-  color: black; }
-  .box-shadow button:hover {
-    color: #aaa; }
-  .box-shadow button.static_button {
-    border-radius: 25px;
-    background-color: white; }
-    .box-shadow button.static_button a {
-      text-decoration: none;
-      color: #3FBF3F; }
-      .box-shadow button.static_button a:hover {
-        color: #888888; }
+.box-shadow {
+  height: 400px; }
+  .box-shadow button {
+    border: 1px solid #DCDCDC;
+    background-color: white;
+    color: black;
+    margin-top: 5px; }
+    .box-shadow button:hover {
+      color: #aaa; }
+    .box-shadow button.static_button {
+      border-radius: 25px;
+      background-color: white; }
+      .box-shadow button.static_button a {
+        text-decoration: none;
+        color: #3FBF3F; }
+        .box-shadow button.static_button a:hover {
+          color: #888888; }
 
 @media (min-width: 320px) {
   .card-columns {
@@ -179,9 +190,9 @@
     padding-top: 50px;
     padding-bottom: 20px; }
 
-.carousel-item button a {
+.dimedPoster button a {
   text-decoration: none; }
-.carousel-item::after {
+.dimedPoster::after {
   content: "";
   display: block;
   position: absolute;
@@ -190,5 +201,11 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.6); }
+
+.mymorebtn .more {
+  display: block; }
+  .mymorebtn .more a {
+    text-decoration: none;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

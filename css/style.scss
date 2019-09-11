@@ -6,6 +6,7 @@ $color-grass-green: #3FBF3F;
 $color-light-ivory: #ebebe0;
 $product-hover-color-green: rgba(171, 247, 171, 1);
 $product-hover-grey: rgba(179, 204, 179, 0.6);
+$bfcolor:#43493F;
 
 
 @mixin myLink{
@@ -96,6 +97,7 @@ $product-hover-grey: rgba(179, 204, 179, 0.6);
 
 // Benefit Content
 .bfContent {
+  background-color: $bfcolor;
   height: auto;
   i {
     font-size: 2.5em;
@@ -131,9 +133,18 @@ $product-hover-grey: rgba(179, 204, 179, 0.6);
 }
 
 
-.card {
+.pcard {
   width: 360px;
   height: 400px;
+  border: none;
+
+}
+
+#fcard {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 240px;
   border: none;
 
 }
@@ -153,11 +164,17 @@ $product-hover-grey: rgba(179, 204, 179, 0.6);
 
 }
 
+
+
 .box-shadow{
+  height: 400px;
+
   button{
     border: 1px solid $color-lightest-grey;
     background-color: white;
     color: black;
+    margin-top: 5px;
+
 
     &:hover{
       color: $color-light-grey;
@@ -257,7 +274,7 @@ $product-hover-grey: rgba(179, 204, 179, 0.6);
 }
 
 .carousel-caption {
-// need to fix the small screen size 
+// need to fix the small screen size
   @media (min-width: 768px){
     width: 500px;
     top: 40px;
@@ -274,7 +291,9 @@ $product-hover-grey: rgba(179, 204, 179, 0.6);
     }
 }
 
-.carousel-item{
+
+
+.dimedPoster{
   button a {
     text-decoration: none;
   }
@@ -287,6 +306,16 @@ $product-hover-grey: rgba(179, 204, 179, 0.6);
     left:0;
     right:0;
     background:rgba(0,0,0,0.6);
+  }
+}
+
+.mymorebtn{
+  .more{
+    a{
+      text-decoration: none;
+      text-align: center;
+    }
+    display: block;
   }
 
 }
