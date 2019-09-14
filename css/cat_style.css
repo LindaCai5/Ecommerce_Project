@@ -1,0 +1,40 @@
+.breadcrumb {
+  display: block;
+  text-align: center;
+  text-decoration-color: #aaa;
+  margin: auto;
+  font-weight: 500;
+  height: auto;
+  width: 100%;
+  background-color: #fffff0; }
+  .breadcrumb li a {
+    text-decoration: none;
+    color: black;
+    margin: auto; }
+    .breadcrumb li a:hover {
+      color: #aaa; }
+  .breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0"; }
+
+.myfilter {
+  margin-top: 30px;
+  margin-right: 50px; }
+
+.filter-col {
+  padding-left: 30px;
+  padding-right: 30px; }
+  .filter-col select {
+    max-width: 90%; }
+
+input[type=color] {
+  width: 17px;
+  height: 20px;
+  border: none;
+  border-radius: 50%; }
+
+.form-group select {
+  width: 150px; }
+
+/*# sourceMappingURL=cat_style.css.map */
