@@ -64,15 +64,15 @@
   opacity: .6; }
 
 .box-shadow {
-  border-radius: 0px;
-  height: 400px;
-  margin-top: 20px; }
+  min-height: 400px;
+  display: flex;
+  justify-content: space-between;
+  border: none; }
   .box-shadow .btn-group {
+    align-items: center;
     margin-top: 20px; }
   .box-shadow .title {
     text-align: center; }
-  .box-shadow .pcard {
-    height: 380px; }
   .box-shadow button {
     border: 1px solid #DCDCDC;
     background-color: white;
@@ -91,14 +91,19 @@
 
 @media (min-width: 320px) {
   .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
     column-count: 1; } }
 @media (min-width: 768px) {
   .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3; } }
 @media (min-width: 1280px) {
   .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
     column-count: 4; } }
-
 .imgH {
   opacity: 1;
   transition: .5s ease;
