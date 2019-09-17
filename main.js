@@ -29,3 +29,11 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
+$(document).ready(function() {
+
+  $('#cookieModal').modal('show');
+	setTimeout(function() {$('#cookieModal').modal('hide');},
+	 4000);
+});
