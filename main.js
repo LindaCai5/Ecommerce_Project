@@ -21,10 +21,11 @@ window.onclick = function(event) {
 
 
 
-
-$(document).ready(function() {
-
-  $('#cookieModal').modal('show');
-	setTimeout(function() {$('#cookieModal').modal('hide');},
-	 4000);
-});
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
