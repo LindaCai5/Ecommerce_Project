@@ -20,13 +20,11 @@ $bfcolor:#43493F;
   color: $color-dark-grey;
   text-align: center;
 }
-//centered text and link
+
 @mixin centerTnL {
   text-align: center;
   margin: auto;
 }
-
-
 
 
 
@@ -53,28 +51,10 @@ $bfcolor:#43493F;
   z-index: -1000;
 }
 
-
-// // Dropdown menu
-// .megamenu-li {
-// 	position: static;
-//   .megamenu{
-//     position: absolute;
-//     width: 100%;
-//     left: 0;
-//     right: 0;
-//     padding: 15px;
-//     li {
-//       position: static;
-//     }
-//   }
-// }
-
-// footer
-// first column of footer
 .footColOne {
 	font-size: 1rem;
 }
-// rest columns of footer
+
 .footColOther {
   ul li {
     a {
@@ -96,7 +76,7 @@ $bfcolor:#43493F;
   width:100%;
 }
 
-// 404 page
+
 .ohno {
 	font-size: 120px;
 	text-align: center;
@@ -114,17 +94,16 @@ $bfcolor:#43493F;
   	}
   }
 }
-// search bar
 
 
-//Banner
+
 .myPoster {
   height: 400px;
 	background-image: url(img/wallpaper.jpg);
 	background-size: cover;
 }
 
-// Benefit Content
+
 .bfContent {
   background-color: $bfcolor;
   height: auto;
@@ -134,17 +113,10 @@ $bfcolor:#43493F;
   }
 }
 
-//Product Tiles 2.0--------------------------------------------------------------------------
-
-
-
-
-//--------------------------------------------------------------------------
-
 
 .staticCard{
  &::after {
-    content: ""; // ::before and ::after both require content
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -160,7 +132,7 @@ $bfcolor:#43493F;
 .box-shadow{
   min-height: 400px;
   display: flex;
-   justify-content: space-between;
+  justify-content: space-between;
   border: none;
   .btn-group{
     align-items: center;
@@ -173,7 +145,6 @@ $bfcolor:#43493F;
     border: 1px solid $color-lightest-grey;
     background-color: white;
     color: black;
-    // padding: 10px 28px;
     font-size: 16px;
 
 
@@ -297,13 +268,6 @@ $bfcolor:#43493F;
 
 
 
-
-
-
-
-
-//--------------------------------------------------------------------------
-
 .carousel-caption {
 // need to fix the small screen size
   @media (min-width: 768px){
@@ -348,7 +312,7 @@ $bfcolor:#43493F;
   }
 }
 
-//---------------------------
+
 
 
 
@@ -428,8 +392,7 @@ $bfcolor:#43493F;
     text-decoration: none;
   }
 }
-//------------------------------------------------------------------------------------------------
-// new nav background
+
 
 .topnav {
   overflow: hidden;

@@ -4,7 +4,7 @@ $(document).ready(function() {
 	});
 });
 
-// Get the modal
+
 var modal1 = document.getElementById("exampleModalCenter");
 
 
@@ -15,9 +15,6 @@ window.onclick = function(event) {
   }
 }
 
-
-
-// ---------------------------------------------------------
 
 
 
